@@ -17,7 +17,7 @@ def ModelLearning(X, y):
     
     # Create 10 cross-validation sets for training and testing
     cv = ShuffleSplit(X.shape[0], n_iter = 10, test_size = 0.2, random_state = 0)
-
+    
     # Generate the training set sizes increasing by 50
     train_sizes = np.rint(np.linspace(1, X.shape[0]*0.8 - 1, 9)).astype(int)
 
@@ -84,7 +84,7 @@ def ModelComplexity(X, y):
     test_std = np.std(test_scores, axis=1)
 
     # Plot the validation curve
-    pl.figure(figsize=(7, 5))
+    pl.figure(figsize=(14, 8))
     pl.title('Decision Tree Regressor Complexity Performance')
     pl.plot(max_depth, train_mean, 'o-', color = 'r', label = 'Training Score')
     pl.plot(max_depth, test_mean, 'o-', color = 'g', label = 'Validation Score')
