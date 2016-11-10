@@ -1,5 +1,7 @@
 ## Predicting Boston Housing Prices
 
+Checkout the final [page](https://t-lanigan.github.io/boston-housing-price-prediction/)
+
 ### Install
 
 This project requires **Python 2.7** and the following Python libraries installed:
